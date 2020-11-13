@@ -5,6 +5,15 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
-}
+	siteMetadata: {
+		title: 'Projecto Gatsby',
+		description: 'Projecto de prueba, tutorial Gatsby',
+		author: 'Arturo Abreu',
+		data: [ 'item1', 'item2' ],
+		person: {
+			name: 'Arturo',
+			age: '28'
+		}
+	},
+	plugins: []
+};
