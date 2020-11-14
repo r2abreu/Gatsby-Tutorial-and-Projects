@@ -17,11 +17,14 @@ const getData = graphql`
 	}
 `;
 export default () => {
-	const data = useStaticQuery(getData);
+	const { site: { siteMetadata: { title, description, author } } } = useStaticQuery(getData);
 
 	return (
 		<div>
-			<h1>{data.site.siteMetadata.title}</h1>
+			<h2>StaticQuery Hook</h2>
+			<h3>Titulo: {title}</h3>
+			<h3>Descripcion: {description}</h3>
+			<h3>Autor: {author}</h3>
 		</div>
 	);
 };

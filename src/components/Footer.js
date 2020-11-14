@@ -1,5 +1,9 @@
 import React from 'react';
 
 export default () => {
-	return <div>This is the Footer</div>;
+	return (
+		<div>
+			<p>This is the Footer</p>
+		</div>
+	);
 };
