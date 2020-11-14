@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Image from 'gatsby-image';
 import img from '../images/desert.jpeg';
-import styles from '../../src/styles.css';
+import './styles.css';
 
 const getData = graphql`
 	{
