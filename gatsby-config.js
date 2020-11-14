@@ -24,6 +24,14 @@ module.exports = {
 				name: `images`,
 				path: `${__dirname}/src/images/`
 			}
+		},
+		{
+			resolve: `gatsby-source-contentful`,
+			options: {
+				spaceId: `3mem05h15i4q`,
+				// Learn about environment variables: https://gatsby.dev/env-vars
+				accessToken: '7oRYmkwTlIGQfWuESLyczZzImUCIB8RPnPIaxUv_BCo'
+			}
 		}
 	]
 };

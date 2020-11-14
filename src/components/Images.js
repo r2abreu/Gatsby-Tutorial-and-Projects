@@ -18,7 +18,7 @@ const getData = graphql`
 			childImageSharp {
 				fluid {
 					src
-					...GatsbyImageSharpFluid
+					...GatsbyImageSharpFluid_tracedSVG
 				}
 			}
 		}
@@ -26,7 +26,6 @@ const getData = graphql`
 `;
 
 export default () => {
-	// const { fixed: { childImageSharp: { fixed: { src } } } } = data;
 	const data = useStaticQuery(getData);
 	return (
 		<React.Fragment>
