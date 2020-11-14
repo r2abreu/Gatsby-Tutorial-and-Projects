@@ -1,0 +1,27 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
+
+article {
+	border: 1px solid #f00;
+	border-radius: 0.5em;
+	display: flex;
+	width: 80%;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+figure {
+	border: 1px solid #00f;
+	max-width: 100%;
+}
+
+figure img {
+	width: 100%;
+}
